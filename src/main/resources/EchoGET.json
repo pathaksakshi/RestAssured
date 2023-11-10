@@ -1,0 +1,78 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Root",
+  "type": "object",
+  "required": [
+    "args",
+    "headers",
+    "url"
+  ],
+  "properties": {
+    "args": {
+
+      "title": "Args",
+      "type": "object",
+      "properties": {
+      }
+    }
+  ,
+    "headers": {
+
+      "title": "Headers",
+      "type": "object",
+      "required": [
+        "x-forwarded-proto",
+        "x-forwarded-port",
+        "host",
+        "x-amzn-trace-id",
+        "user-agent",
+        "accept",
+        "accept-encoding"
+      ],
+      "properties": {
+        "x-forwarded-proto": {
+          "title": "X-forwarded-proto",
+          "type": "string",
+          "default": ""
+        },
+        "x-forwarded-port": {
+          "title": "X-forwarded-port",
+          "type": "string",
+          "default": ""
+        },
+        "host": {
+          "title": "Host",
+          "type": "string",
+          "default": ""
+        },
+        "x-amzn-trace-id": {
+          "title": "X-amzn-trace-id",
+          "type": "string",
+          "default": ""
+        },
+        "user-agent": {
+          "title": "User-agent",
+          "type": "string",
+          "default": ""
+        },
+        "accept": {
+          "title": "Accept",
+          "type": "string",
+          "default": ""
+        },
+        "accept-encoding": {
+          "title": "Accept-encoding",
+          "type": "string",
+          "default": ""
+        }
+      }
+    }
+  ,
+    "url": {
+      "title": "Url",
+      "type": "string",
+      "default": ""
+    }
+  }
+}
