@@ -46,9 +46,9 @@ public class POST_Json_array_as_List {
 
         given().relaxedHTTPSValidation().
                 body(jsonarraylist).
-        when().
+                when().
                 post("/post").
-        then().
+                then().
                 log().all().
                 assertThat().
                 body("msg", equalTo("Successful"));
